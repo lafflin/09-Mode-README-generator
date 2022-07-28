@@ -81,12 +81,7 @@ function init() {
 init();
 
 /*
-ask for project title -> heading
-description, installation, usage, contribution, and test sections
-  -generate sections and allow user to add content to them
-questions section, includes a link to github profile and email
-license stuff-> use MIT license  and GNU license as options
-
-table of contents must work
+need to make the readme actually generate to the console
+-then need to make the read me generate to a file properly
 need a video preview + screenshots(if needed) in the readme
 */
