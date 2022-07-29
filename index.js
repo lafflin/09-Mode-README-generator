@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+import generateMarkdown from "./utils/generateMarkdown";
 console.log("online");
 // TODO: Create an array of questions for user input
 const questions = [
@@ -68,7 +68,7 @@ function init() {
 	return inquirer
 		.prompt(questions)
 		.then((data) => {
-			const mark = generateMarkdown.generateMarkdown(data);
+			const mark = generateMarkdown.generateMarkdown();
 			console.log(mark);
 			return data;
 		})
